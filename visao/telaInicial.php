@@ -37,7 +37,7 @@ include_once('cabecalho.php');
 
             <div class="box">
 
-                <h2>Sobre o projeto</h2>
+                <h3>Sobre o projeto</h3>
 
                 <p>A turma 13 do curso de TI do Senac Santa Cruz, foi desafiada à participar de um projeto onde se
                     consistia em cadastrar todos os ativos da sala, ou seja, criar um patrimônio dos recursos da
@@ -72,60 +72,102 @@ include_once('cabecalho.php');
 
             </div>
             <div class="box2">
-                <div class="margin">
-                    <div class="icon">
-                        <a href="#">
-                            <i class="fa fa-address-book"></i>
-                        </a>
-                    </div>
-                    <span>
-                        <h2>Cadastro</h2>
-                    </span>
-                    <p>
-                        Clique acima para fazer seu Cadastro
-                    </p>
-                </div>
 
-                <div class="margin">
-                    <div class="icon">
-                        <a href="#">
-                            <i class="fa fa-address-book"></i>
-                        </a>
+                    <br><br>
+                <h2><b>USUÁRIO</b></h2>
+                <p><b>CADASTRE SEU USUÁRIO ABAIXO, CASO JÁ TENHA UM, FAÇA O LOGIN DELE</b></p>
+                <hr>
+                <div class="columns">
+                    <div class="margin">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa fa-address-card"></i>
+                            </a>
+                        </div>
+                        <span>
+                            <h3 style="text-transform: uppercase;"><b>Cadastro</b></h3>
+                        </span>
+                        <p>
+                            CLIQUE ACIMA PARA FAZER SEU CADASTRO
+                        </p>
                     </div>
-                    <span>
-                        <h2>Cadastro</h2>
-                    </span>
-                    <p>
-                        Clique acima para fazer seu Cadastro
-                    </p>
-                </div>
 
-                <div class="margin">
-                    <div class="icon">
-                        <a href="#">
-                            <i class="fa fa-address-book"></i>
-                        </a>
+                    <div class="margin">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                        <span>
+                            <h3 style="text-transform: uppercase;"><b>Login</b></h3>
+                        </span>
+                        <p>
+                            CLIQUE ACIMA PARA FAZER SEU LOGIN
+                        </p>
                     </div>
-                    <span>
-                        <h2>Cadastro</h2>
-                    </span>
-                    <p>
-                        Clique acima para fazer seu Cadastro
-                    </p>
                 </div>
+                    <br><br>
+                <h2><b>USUÁRIO</b></h2>
+                <p><b>CADASTRE SEU USUÁRIO ABAIXO, CASO JÁ TENHA UM, FAÇA O LOGIN DELE</b></p>
+                    <hr>
 
-                <div class="margin">
-                    <div class="icon">
-                        <a href="#">
-                            <i class="fa fa-address-book"></i>
-                        </a>
+
+                <div class="columns">
+                    <div class="margin">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa fa-line-chart"></i>
+                            </a>
+                        </div>
+                        <span>
+                            <h3 style="text-transform: uppercase;"><b>RELATÓRIOS</b></h3>
+                        </span>
+                        <p>
+                            CLIQUE ACIMA PARA GERAR UM RELATÓRIO
+                        </p>
                     </div>
-                    <span>
-                        <h2>Cadastro</h2>
-                    </span>
-                    <p>
-                        Clique acima para fazer seu Cadastro
-                    </p>
+
+                    <div class="margin">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa fa-users"></i>
+                            </a>
+                        </div>
+                        <span>
+                            <h3 style="text-transform: uppercase;"><b>LISTAGEM</b></h3>
+                        </span>
+                        <p>
+                            CLIQUE ACIMA PARA VER A LISTA DE USERS
+                        </p>
+                    </div>
+
+                    <div class="margin">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa fa-desktop"></i>
+                            </a>
+                        </div>
+                        <span>
+                            <h3 style="text-transform: uppercase;"><b>ATIVOS</b></h3>
+                        </span>
+                        <p>
+                            CLIQUE ACIMA PARA CADASTRAR UM ATIVO
+                        </p>
+                    </div>
+
+                    <div class="margin">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa fa-window-restore"></i>
+                            </a>
+                        </div>
+                        <span>
+                            <h3 style="text-transform: uppercase;"><b>MOVIMENTAÇÃO</b></h3>
+                        </span>
+                        <p>
+                            CLIQUE ACIMA PARA CADASTRAR UMA MOVIMENTAÇÃO
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -156,7 +198,7 @@ function carrossel() {
 
     imgs.style.transform = `translateX(${-idx * 600}px)`;
 }
-setInterval(carrossel, 1800);
+setInterval(carrossel, 3000);
 </script>
 
 </html>

@@ -98,7 +98,7 @@ function editar(idAtivo){
     success: function(result){
       retorno=JSON.parse(result)
       $('#modal').click();
-      $("#descricao").val(retorno[0]['descricaoAtivo']);
+      $("#descricao").val(retorno[0]['descricaoAtivo']); 
       $("#quantidade").val(retorno[0]['quantidadeAtivo']);
       $("#quantidadeMin").val(retorno[0]['quantidadeMinima']);
       $("#marca").val(retorno[0]['idMarca']);
@@ -116,6 +116,49 @@ function editar(idAtivo){
 
   
 };
+
+
+function infos(idAtivo){
+  
+  $('#idAtivo').val(idAtivo)
+  $.ajax({
+    type:'POST',
+    url: "../controle/ativos_controle.php",
+    data:{
+      acao:'get_info',
+      idAtivo:idAtivo
+    },
+
+    success: function(result){
+      retorno=JSON.parse(result)
+      $('#infos').click();
+      $("#descricaoInfos").val(retorno[0]['descricaoAtivo']);
+      $("#quantidadeInfos").val(retorno[0]['quantidadeAtivo']);
+      $("#quantidadeMinInfos").val(retorno[0]['quantidadeMinima']);
+      $("#marcaInfos").val(retorno[0]['marca']);
+      $("#tipoInfos").val(retorno[0]['tipo']);
+      $("#observacaoInfos").val(retorno[0]['observacaoAtivo']);
+      $("#dataInfos").val(retorno[0]['dataCadastroAtivo']);
+      $("#usuarioInfos").val(retorno[0]['usuario']);
+      if (retorno[0]['urlImagem']) {
+        $("#previewImagemInfos").attr("src", window.location.protocol + "//" + window.location.host + '/' + retorno[0]['urlImagem']);
+        $(".div_previer").attr('style','display:block');
+      } else {
+        $(".div_previer").attr('style','display:none');
+      }
+      console.log(result);
+    }
+});
+
+  
+};
+
+
+
+
+
+
+
 
 function fechar_modal(){
       $("#descricao").val('');
@@ -164,3 +207,7 @@ function deletar(idAtivo) {
   });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  var tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+});

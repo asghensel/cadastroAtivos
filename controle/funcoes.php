@@ -14,6 +14,7 @@ return $dados;
 
 function busca_prod_ml($pesquisa){
 
+ 
 
     $ch = curl_init();
     $pesq = urlencode($pesquisa);
@@ -34,6 +35,7 @@ function busca_prod_ml($pesquisa){
             $conteudo.= "</div>";
         }
     }
+
     return $conteudo;
 }
 

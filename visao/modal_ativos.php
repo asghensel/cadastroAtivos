@@ -33,7 +33,7 @@
                     <div class="mb-1">
                         <label for="recipient-name" class="col-form-label">Marca</label>
                         <select class="form-select" id="marca" required>
-                            <option selected>Selecione a marca</option>
+                            <option value="">Selecione a marca</option>
                             <?php 
                       foreach($marcas as $marca){
                         echo '<option value="'.$marca['idMarca'].'">'.$marca['descricaoMarca'].'</option>';
@@ -44,7 +44,7 @@
                     <div class="mb-1">
                         <label for="recipient-name" class="col-form-label">Tipo</label>
                         <select class="form-select" id="tipo" required>
-                            <option selected>Selecione o tipo</option>
+                            <option value="">Selecione o tipo</option>
                             <?php 
                       foreach($tipos as $tipo){
                         echo '<option value="'.$tipo['idTipo'].'">'.$tipo['descricaoTipo'].'</option>';

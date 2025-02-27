@@ -86,7 +86,7 @@ th {
 }
 
 .edit i:hover {
-    color: #28a745;
+    color: #3d28a7;
 }
 
 .acoes i {
@@ -96,10 +96,21 @@ th {
     transition: color 0.3s ease;
 }
 
-.acoes i:hover {
-    color: #007bff;
+
+.bi-file-earmark-medical-fill{
+    color: #3d28a7 !important;
+    font-size: 1.8em;
 }
 
+.bi-file-earmark-medical-fill:hover{
+    color: #a99de6 !important;
+    font-size: 1.8em;
+}
+
+
+.bi-trash:hover{
+    color: red;
+}
 .muda_status .inativo i {
     color: #28a745; /* Verde para ativo */
 }

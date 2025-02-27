@@ -152,21 +152,38 @@ nav {
   background-color: beige;
   border: solid 2px black;
   text-align: justify;
-  padding: 10px;
+  padding: 20px;
+  font-size:20px;
   margin-right: 5px;
 }
 
-.box h2{
+hr{
+  width: 80%;
+  align-content: center;
+}
+
+.box h3{
   text-align:center ;
+  
 }
 
 .box2{
   margin-left: 5px;
   width: 50%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding-left:60px ;
   text-align: center;
   border: solid 2px black;
+}
+
+.box2 h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+ 
+}
+
+.columns{
+  grid-template-columns: 1fr 1fr;
+  display: grid;
 }
 
 .imagens{
@@ -191,6 +208,16 @@ nav {
   transform: translateX(0);   
 }
 
+.margin {
+  width: 300px;
+  height: 200px; /* Adicionei a altura para formar um quadrado */
+  margin: 5px;
+  border: solid 1px transparent;
+  border-radius: 10px; /* Deixei um pouco arredondado, mas pode ser 0 para bordas retas */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Ajustei a sombra */
+  background-color: #fff; /* Cor de fundo para destaque */
+}
+
 
 
 /*Botões*/
@@ -199,6 +226,7 @@ nav {
 .icon{
   font-family: "Open Sans", sans-serif;
   margin-top: 10px;
+  margin-bottom: 5px;
   display: flex;
   width: 100%;
   min-height: 50px;
@@ -258,6 +286,7 @@ nav {
   transform: scale3d(0, 0, 0);
   transition: 0.25s ease-in;
 }
+
 .icon a:hover i {
   color: #fff;
   transform: scale3d(1.5, 1.5, 1);

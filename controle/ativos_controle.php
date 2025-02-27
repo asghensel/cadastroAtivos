@@ -94,12 +94,16 @@ if($acao == 'get_info'){
             descricaoAtivo,
             quantidadeAtivo,
             quantidadeMinima,
-            idMarca,
-            idTipo,
             observacaoAtivo,
-            urlImagem
+            dataCadastroAtivo,
+            urlImagem,
+            a.idMarca,
+            a.idTipo,
+            (SELECT descricaoMarca FROM marca m WHERE m.idMarca = a.idMarca) as marca,
+            (SELECT descricaoTipo FROM tipo t WHERE t.idTipo = a.idTipo) as tipo,  
+            (SELECT nomeUsuario FROM usuario u WHERE u.idUsuario = a.idUsuario) as usuario
         From
-            ativo
+            ativo a 
         Where
             idAtivo = $idAtivo    
     ";
