@@ -37,7 +37,7 @@ include_once('cabecalho.php');
 
             <div class="box">
 
-                <h3>Sobre o projeto</h3>
+                <h3 style="font-size: 2em;">Sobre o projeto</h3>
 
                 <p>A turma 13 do curso de TI do Senac Santa Cruz, foi desafiada à participar de um projeto onde se
                     consistia em cadastrar todos os ativos da sala, ou seja, criar um patrimônio dos recursos da

@@ -44,7 +44,7 @@ $admin =$_SESSION['admin'];
                     <th scope="col">Ações</th>
                     <?php
       }
-?>
+                    ?>
 
 
                 </tr>
